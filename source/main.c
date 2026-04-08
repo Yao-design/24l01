@@ -67,21 +67,14 @@ void ts2G4_Rx_End_It(uint8_t is_crc_err)
     {
         rx_count++;
         LOG_I("[RX_OK] rx_count=%d", rx_count);
-        LOG_I("[RX] Data:");
-        // 打印autoLen参数
-        LOG_I("[autoLen] preSize=%02X, size=%02X, headerSign=%02X, extSize=%02X, ext=%02X",
-          rf_2g4_mgr.autoLen_preSize,
-          rf_2g4_mgr.autoLen_size,
-          rf_2g4_mgr.autoLen_headerSign,
-          rf_2g4_mgr.autoLen_extSize,
-          rf_2g4_mgr.autoLen_ext);
+        LOG_I("[RX] len=%d", rf_2g4_mgr.fifoLen);
         LOG_HEX(rx_buf, 32);
     }
     else
     {
         crc_err_count++;
     }
-    
+
     rf_rx_busy = 0;
 }
 
@@ -192,21 +185,21 @@ int main(void)
     LOG_I("========================================");
     
     RF_2G4_PARAM_ts tmp_rf_cfg = {
-        .channel = 62,
+        .channel = 88,
         .phyMode = RF_2G4_RATE_1M,
-        .preambleLen = 1,
+        .preambleLen = 2,
         .accessCode = {0xC3, 0x3C, 0x5A, 0xA5},
         .accessLen = 4,
         .whiteEn = 0,
         .whiteInit = 0,
-        .crcEn = 0,
-        .crcLen = 2,
-        .crcInit = 0x6648,   // 5字节地址预补偿(0x96,0xC3,0x3C,0x5A,0xA5)
-        .crcPoly = 0x1021,   // LSB first多项式
+        .crcEn = 0,           // 开启CRC
+        .crcLen = 2,          // 16位CRC
+        .crcInit = 0xFFFF,    // 标准初始值
+        .crcPoly = 0x1021,     // 标准CRC-16多项式
         .autoLen_preSize = 3,
         .autoLen_size = 6,
-        .autoLen_headerSign = 0,    
-        .autoLen_extSize = 8,
+        .autoLen_headerSign = 0,
+        .autoLen_extSize = 0,
         .autoLen_ext = 0,
         .autoLen_maxAllow_rxBits = 32 * 8,
         .fifoOffset = 0,
@@ -226,9 +219,9 @@ int main(void)
     
     ts2G4_Single_Init(&tmp_rf_cfg);
     
-    ts2G4_Single_Set_DataFormat(1);  // LSB first (0=LSB, 1=MSB)
+    ts2G4_Single_Set_DataFormat(1);   
     
-    freq = 62;
+    freq = 88;
 
     RF_2G4_PrepareStart();
     
