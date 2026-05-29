@@ -1,7 +1,7 @@
 Dependencies for Project '2g4_tx_rx_slp', Target '2g4_tx_rx_slp': (DO NOT MODIFY !)
 CompilerVersion: 6160000::V6.16::ARMCLANG
-F (..\source\main.c)(0x69D5E975)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/main.o -MD)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+F (..\source\main.c)(0x6A157AC5)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/main.o -MD)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
@@ -24,9 +24,9 @@ I (..\..\..\..\modules\drv\ts800x_hal_uart.h)(0x67E0FE3C)
 I (..\..\..\..\modules\drv\ts800x_hal_systick.h)(0x67613DFE)
 I (..\..\..\..\modules\2g4\ts800x_single_2g4.h)(0x693026EB)
 I (..\..\..\..\modules\2g4\ts_2g4_def.h)(0x69310108)
-I (..\include\ts800x_2g4_rf.h)(0x680761F6)
-I (..\include\ts800x_sleep_2g4.h)(0x67E16664)
-F (..\source\2g4_slp_lib.a)(0x692FA4DA)()
+I (..\include\ts800x_2g4_rf.h)(0x69D5EDE7)
+I (..\include\ts800x_sleep_2g4.h)(0x69D5EDE7)
+F (..\source\2g4_slp_lib.a)(0x69D5EDE7)()
 F (..\..\..\..\soc\ts800x\lib\ts800x_2G4_lib.lib)(0x6930FCF2)()
 F (..\..\..\..\modules\drv\ts800x_ll_gpio.c)(0x680898FC)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_ll_gpio.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
@@ -38,7 +38,7 @@ I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -56,7 +56,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -71,7 +71,7 @@ I (..\..\..\..\modules\drv\ts800x_hal_systick.h)(0x67613DFE)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\modules\drv\ts800x_hal_def.h)(0x67E0FE12)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
@@ -92,7 +92,7 @@ I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -101,7 +101,7 @@ I (..\..\..\..\soc\m0\cmsis_armclang.h)(0x649D3F96)
 I (..\..\..\..\soc\ts800x\system.h)(0x68C0F9BC)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 F (..\..\..\..\modules\drv\ts800x_flash.h)(0x69301C5D)()
-F (..\source\system_init.c)(0x686D0078)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/system_init.o -MD)
+F (..\source\system_init.c)(0x69D5EDE7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/system_init.o -MD)
 I (..\..\..\..\soc\ts800x\boot__array.h)(0x6931268C)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
@@ -109,7 +109,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -117,8 +117,8 @@ I (..\..\..\..\soc\m0\cmsis_compiler.h)(0x6686195A)
 I (..\..\..\..\soc\m0\cmsis_armclang.h)(0x649D3F96)
 I (..\..\..\..\soc\ts800x\system.h)(0x68C0F9BC)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-I (..\include\system_init.h)(0x680A189C)
-I (..\include\ts800x_sleep_2g4.h)(0x67E16664)
+I (..\include\system_init.h)(0x69D5EDE7)
+I (..\include\ts800x_sleep_2g4.h)(0x69D5EDE7)
 I (..\..\..\..\modules\debug\log.h)(0x69CA2713)
 I (..\..\..\..\modules\debug\uart_dbg.h)(0x6760FA12)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
@@ -126,15 +126,15 @@ I (..\..\..\..\modules\drv\ts800x_ll_gpio.h)(0x6954848C)
 I (..\..\..\..\modules\drv\ts800x_hal_def.h)(0x67E0FE12)
 I (..\..\..\..\modules\drv\ts800x_hal_uart.h)(0x67E0FE3C)
 I (..\..\..\..\modules\drv\ts800x_hal_systick.h)(0x67613DFE)
-F (..\source\ts800x_it_2g4.c)(0x68062F8C)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_it_2g4.o -MD)
-I (..\include\ts800x_it_2g4.h)(0x67E100BC)
+F (..\source\ts800x_it_2g4.c)(0x69D5EDE7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_it_2g4.o -MD)
+I (..\include\ts800x_it_2g4.h)(0x69D5EDE7)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -142,16 +142,16 @@ I (..\..\..\..\soc\m0\cmsis_compiler.h)(0x6686195A)
 I (..\..\..\..\soc\m0\cmsis_armclang.h)(0x649D3F96)
 I (..\..\..\..\soc\ts800x\system.h)(0x68C0F9BC)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
-F (..\source\ts800x_sleep_2g4.c)(0x680A1A44)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_sleep_2g4.o -MD)
+F (..\source\ts800x_sleep_2g4.c)(0x69D5EDE7)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_sleep_2g4.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
-I (..\include\ts800x_sleep_2g4.h)(0x67E16664)
+I (..\include\ts800x_sleep_2g4.h)(0x69D5EDE7)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\soc\m0\cpu_cm0.h)(0x680893E2)
 I (..\..\..\..\soc\m0\core_cm0plus.h)(0x676A559C)
 I (..\..\..\..\soc\m0\cmsis_version.h)(0x66861CAA)
@@ -164,7 +164,7 @@ I (..\..\..\..\modules\drv\ts800x_hal_def.h)(0x67E0FE12)
 I (..\..\..\..\modules\drv\ts800x_hal_uart.h)(0x67E0FE3C)
 I (..\..\..\..\modules\drv\ts800x_hal_systick.h)(0x67613DFE)
 I (..\..\..\..\modules\drv\ts800x_ll_gpio.h)(0x6954848C)
-F (..\source\context_switch.S)(0x68C00672)(--cpu Cortex-M0+ --li -g -I ..\..\..\..\soc\m0-IC:\Users\18836\AppData\Local\Arm\Packs\TechStorm\DFP\1.0.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 535"--pd "TS800X SETA 1"--list .\out\context_switch.lst--xref -o .\obj\context_switch.o--depend .\obj\context_switch.d)
+F (..\source\context_switch.S)(0x69D5EDE7)(--cpu Cortex-M0+ --li -g -I ..\..\..\..\soc\m0-IC:\Users\18836\AppData\Local\Arm\Packs\TechStorm\DFP\1.0.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 535"--pd "TS800X SETA 1"--list .\out\context_switch.lst--xref -o .\obj\context_switch.o--depend .\obj\context_switch.d)
 F (..\..\..\..\soc\ts800x\platform\keil\ts800x_startup.s)(0x681069DE)(--cpu Cortex-M0+ --li -g -I ..\..\..\..\soc\m0-IC:\Users\18836\AppData\Local\Arm\Packs\TechStorm\DFP\1.0.0\Device\ARM\ARMCM0\Include--pd "__UVISION_VERSION SETA 535"--pd "TS800X SETA 1"--list .\out\ts800x_startup.lst--xref -o .\obj\ts800x_startup.o--depend .\obj\ts800x_startup.d)
 F (..\..\..\..\soc\ts800x\ts800x_otp_cfg.c)(0x69326822)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/ts800x_otp_cfg.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\string.h)(0x603507D0)
@@ -174,7 +174,7 @@ I (..\..\..\..\soc\ts800x\system.h)(0x68C0F9BC)
 I (..\..\..\..\soc\ts800x\ts800x_config.h)(0x686F1FAA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 F (..\..\..\..\modules\debug\log.c)(0x68089984)(-xc -std=c11 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-mlittle-endian -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../include -I ../../../../modules/drv -I ../../../../soc/ts800x -I ../../../../soc/m0 -I ../../../../modules/debug -I ../../../../modules/debug/RTT -I ../../../../modules/2g4 -fno-short-wchar -D__UVISION_VERSION="535" -DTS800X-o ./obj/log.o -MD)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
@@ -183,7 +183,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\modules\debug\uart_dbg.h)(0x6760FA12)
 I (..\..\..\..\modules\drv\ts800x_ll_gpio.h)(0x6954848C)
 I (..\..\..\..\modules\drv\ts800x_hal_def.h)(0x67E0FE12)
@@ -207,7 +207,7 @@ I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
 I (..\..\..\..\modules\debug\log.h)(0x69CA2713)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\modules\drv\ts800x_ll_gpio.h)(0x6954848C)
 I (..\..\..\..\modules\drv\ts800x_hal_def.h)(0x67E0FE12)
 I (..\..\..\..\soc\ts800x\ts800x.h)(0x67F79872)
@@ -237,7 +237,7 @@ I (..\..\..\..\modules\debug\log.h)(0x69CA2713)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdarg.h)(0x603507D4)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
-I (..\include\cfg_def_app.h)(0x69C0F96B)
+I (..\include\cfg_def_app.h)(0x69D5EDE7)
 I (..\..\..\..\modules\debug\uart_dbg.h)(0x6760FA12)
 I (C:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
 I (..\..\..\..\modules\drv\ts800x_ll_gpio.h)(0x6954848C)

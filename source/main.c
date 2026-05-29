@@ -22,7 +22,7 @@ void SystemInit(void);
 /******************************************************************************
  Local Macro Definition
  ******************************************************************************/
-#define NRF24L01_PAYLOAD_LEN   32
+#define NRF24L01_PAYLOAD_LEN   200
 
 /******************************************************************************
  Local Variables
@@ -66,9 +66,9 @@ void ts2G4_Rx_End_It(uint8_t is_crc_err)
     if(!is_crc_err)
     {
         rx_count++;
-        LOG_I("[RX_OK] rx_count=%d", rx_count);
+        LOG_I("autoLen_ext=%x", rf_2g4_mgr.autoLen_ext);
         LOG_I("[RX] len=%d", rf_2g4_mgr.fifoLen);
-        LOG_HEX(rx_buf, 32);
+        LOG_HEX(rx_buf, rf_2g4_mgr.fifoLen+3);
     }
     else
     {
@@ -188,7 +188,8 @@ int main(void)
         .channel = 88,
         .phyMode = RF_2G4_RATE_1M,
         .preambleLen = 2,
-        .accessCode = {0xC3, 0x3C, 0x5A, 0xA5},
+        //.accessCode = {0x00,0x8E, 0x89, 0xBE},
+			.accessCode = {0x8E, 0x89, 0xBE,0XD6},
         .accessLen = 4,
         .whiteEn = 0,
         .whiteInit = 0,
@@ -196,20 +197,19 @@ int main(void)
         .crcLen = 2,          // 16位CRC
         .crcInit = 0xFFFF,    // 标准初始值
         .crcPoly = 0x1021,     // 标准CRC-16多项式
-        .autoLen_preSize = 3,
-        .autoLen_size = 6,
-        .autoLen_headerSign = 0,
-        .autoLen_extSize = 0,
+       // .autoLen_preSize = 6,
+			.autoLen_size=6,
+        .autoLen_extSize = 3,
         .autoLen_ext = 0,
         .autoLen_maxAllow_rxBits = 32 * 8,
         .fifoOffset = 0,
         .fifoLen = NRF24L01_PAYLOAD_LEN,
         .rxTimeout = 30 * 1000,
-        .autoAck_resendEn = 0,
-        .autoAck_rxTimeout = 500,
-        .autoAck_resendDelay = 250,
-        .autoAck_txDelay = 0,
-        .autoAck_resendLimit = 0,
+//        .autoAck_resendEn = 0,
+//        .autoAck_rxTimeout = 500,
+//        .autoAck_resendDelay = 250,
+//        .autoAck_txDelay = 0,
+//        .autoAck_resendLimit = 0,
     };
 
     LOG_I("[CFG] channel=%d (freq=%dMHz)", tmp_rf_cfg.channel, 2364 + tmp_rf_cfg.channel);
@@ -225,7 +225,7 @@ int main(void)
 
     RF_2G4_PrepareStart();
     
-    uint8_t last_prmble = 0x96;
+    uint8_t last_prmble = 0x00;
     ts2G4_Set_Preamble_N_Last(&last_prmble, 1);
     
     RF_2G4_UpdateDesc_TxPkt();

@@ -197,8 +197,8 @@ void nrf24l01_send(uint8_t *payload, uint8_t payload_len)
 static void decode_nrf24l01_payload_from_rx(const uint8_t *rx, int rx_bytes)
 {
     // 已知的期望 payload
-    const uint8_t expected_payload[4] = {0x01, 0x02, 0x03, 0x04};
-    const int expected_len = 4;
+    const uint8_t expected_payload[1] = {0x01};
+    const int expected_len = 1;
     
     // 两种 bit 流
     uint8_t bits_M[512];  // MSB-first: 每字节 bit7->bit0
